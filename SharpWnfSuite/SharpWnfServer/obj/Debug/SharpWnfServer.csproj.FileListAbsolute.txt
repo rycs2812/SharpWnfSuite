@@ -1,0 +1,7 @@
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfServer.exe.config
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfServer.exe
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfServer.pdb
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfServer\obj\Debug\SharpWnfServer.csproj.AssemblyReference.cache
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfServer\obj\Debug\SharpWnfServer.csproj.CoreCompileInputs.cache
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfServer\obj\Debug\SharpWnfServer.exe
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfServer\obj\Debug\SharpWnfServer.pdb

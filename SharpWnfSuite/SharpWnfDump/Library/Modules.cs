@@ -6,7 +6,7 @@ using SharpWnfDump.Interop;
 
 namespace SharpWnfDump.Library
 {
-    internal class Modules
+    public class Modules
     {
         public static void BruteForceWnfNames(bool showData)
         {
@@ -162,6 +162,7 @@ namespace SharpWnfDump.Library
                             try
                             {
                                 var stateName = Convert.ToUInt64(nameBuilder.ToString(), 16);
+                                Console.WriteLine(stateName.ToString("X"));
                                 outputBuilder.Append(Helpers.DumpWnfData(stateName, pInfoBuffer, showSd, showData));
                             }
                             catch { }
@@ -250,6 +251,80 @@ namespace SharpWnfDump.Library
                 Console.WriteLine("[-] Failed to write data (The data size may exceed the maximum size of the target WNF object).");
 
             Marshal.FreeHGlobal(pDataBuffer);
+        }
+
+
+
+        public static String DumpKeyInfoForSharpScan(ulong stateName, bool showSd, bool showData)
+        {
+            int error;
+            var wnfStateName = new WNF_STATE_NAME { Data = stateName };
+
+            if (wnfStateName.GetNameLifeTime() == WNF_STATE_NAME_LIFETIME.Temporary)
+            {
+                // Console.WriteLine("[-] Temporary WNF State Name is not supported.");
+                return "";
+            }
+
+            error = NativeMethods.RegOpenKeyEx(
+                    Win32Consts.HKEY_LOCAL_MACHINE,
+                    Globals.LifetimeKeyNames[(uint)wnfStateName.GetNameLifeTime()],
+                    0,
+                    Win32Consts.KEY_READ,
+                    out IntPtr phkResult);
+
+            if (error != Win32Consts.ERROR_SUCCESS)
+            {
+                // Console.WriteLine("[-] Failed to open regitry key (Error = 0x{0}).", error.ToString("X8"));
+                return "";
+            }
+
+            do
+            {
+                IntPtr pInfoBuffer;
+                int nInfoLength = 0;
+                var outputBuilder = new StringBuilder();
+                error = NativeMethods.RegQueryValueEx(
+                    phkResult,
+                    stateName.ToString("X16"),
+                    0,
+                    IntPtr.Zero,
+                    IntPtr.Zero,
+                    ref nInfoLength);
+
+                if (error != Win32Consts.ERROR_SUCCESS)
+                {
+                    // Console.WriteLine("[-] Failed to query registry value (Error = 0x{0}).", error.ToString("X8"));
+                    break;
+                }
+
+                pInfoBuffer = Marshal.AllocHGlobal(nInfoLength);
+                error = NativeMethods.RegQueryValueEx(
+                    phkResult,
+                    stateName.ToString("X16"),
+                    0,
+                    IntPtr.Zero,
+                    pInfoBuffer,
+                    ref nInfoLength);
+
+                if (error != Win32Consts.ERROR_SUCCESS)
+                {
+                   // Console.WriteLine("[-] Failed to query registry value (Error = 0x{0}).", error.ToString("X8"));
+                }
+                else
+                {
+                    // outputBuilder.AppendFormat("| {0,-64}| S | L | P | AC | N | CurSize | MaxSize | Changes |\n", "WNF State Name");
+                    // putBuilder.AppendLine(new string('-', 118));
+                    outputBuilder.Append(Helpers.DumpWnfData(stateName, pInfoBuffer, showSd, showData));
+                    return outputBuilder.ToString();
+                }
+
+                Marshal.FreeHGlobal(pInfoBuffer);
+            } while (false);
+
+            NativeMethods.RegCloseKey(phkResult);
+
+            return "";
         }
     }
 }

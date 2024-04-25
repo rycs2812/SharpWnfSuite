@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 using SharpWnfDump.Interop;
@@ -9,6 +10,10 @@ namespace SharpWnfDump.Library
 
     internal class Helpers
     {
+
+        public const ulong WNF_CMFC_FEATURE_CONFIGURATION_CHANGED = 0x0280032EA3BC0875;
+        public const ulong WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED = 0x0D83063EA3BE10F5;
+
         public static string DumpWnfData(
             ulong stateName,
             IntPtr pSecurityDescriptor,
@@ -17,6 +22,14 @@ namespace SharpWnfDump.Library
         {
             int nMaxSize = -1;
             var outputBuilder = new StringBuilder();
+            
+            if (stateName == WNF_CMFC_FEATURE_CONFIGURATION_CHANGED) {
+                int debug_break = 1;
+            } else if (stateName == WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED)
+            {
+                int debug_break = 1;
+            }
+
 
             if (pSecurityDescriptor != IntPtr.Zero)
             {
@@ -24,6 +37,7 @@ namespace SharpWnfDump.Library
                 {
                     var nSdSize = NativeMethods.GetSecurityDescriptorLength(pSecurityDescriptor);
                     nMaxSize = Marshal.ReadInt32(pSecurityDescriptor, nSdSize);
+
                 }
                 else
                 {
@@ -55,19 +69,24 @@ namespace SharpWnfDump.Library
                 else
                     dataScopeTag = dataScope.ToString()[0];
 
+                if (stateName == 973628810546643189)
+                {
+                    int debugbreak = -1;
+                }
+
                 bReadable = ReadWnfData(
                     stateName,
                     out int changeStamp,
                     out IntPtr pInfoBuffer,
                     out uint nInfoLength);
                 bWritable = IsWritable(stateName);
-
+                 
                 if (bWritable)
                     exists = GetWnfSubscribersPresenceInfo(stateName);
-
+                  
                 outputBuilder.AppendFormat(
-                    "| {0,-64}| {1} | {2} | {3} | {4} | {5} | {6,7} | {7,7} | {8,7} |\n",
-                    GetWnfName(stateName),
+                    "    | {0} | {1} | {2} | {3} | {4} | {5,7} | {6,7} | {7,7} |\n",
+                   //etWnfName(stateName),
                     dataScopeTag,
                     wnfStateName.GetNameLifeTime().ToString()[0],
                     (wnfStateName.GetPermanentData() != 0) ? 'Y' : 'N',
@@ -196,7 +215,6 @@ namespace SharpWnfDump.Library
         {
             NTSTATUS ntstatus;
             nInfoLength = 0x1000u;
-
             do
             {
                 pInfoBuffer = Marshal.AllocHGlobal((int)nInfoLength);

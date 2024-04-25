@@ -18,7 +18,8 @@ namespace SharpWnfDump.Handler
                 options.GetHelp();
                 return;
             }
-
+            Console.WriteLine("Debug break (input anything):");
+            String debugBreak = Console.ReadLine();
             Console.WriteLine();
             
             if (options.GetFlag("info"))

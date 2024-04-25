@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 using SharpWnfScan.Interop;
+using SharpWnfDump.Library;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SharpWnfScan.Library
 {
@@ -149,9 +151,11 @@ namespace SharpWnfScan.Library
             foreach (var subscription in nameSubscriptions)
             {
                 outputBuilder.AppendFormat("    WNF_NAME_SUBSCRIPTION @ 0x{0}\n", subscription.Value.ToString(addressFormat));
-                outputBuilder.AppendFormat("    StateName : 0x{0} ({1})\n\n",
+                outputBuilder.AppendFormat("    StateName : 0x{0} ({1})\n",
                     subscription.Key.ToString("X16"),
                     Helpers.GetWnfName(subscription.Key));
+
+                outputBuilder.Append(SharpWnfDump.Library.Modules.DumpKeyInfoForSharpScan(subscription.Key, false, false) + "\n\n");
 
                 if (bVerbose)
                 {
@@ -165,7 +169,7 @@ namespace SharpWnfScan.Library
                         outputBuilder.AppendFormat("        Context  @ 0x{0} ({1})\n\n",
                             entry.Context.ToString(addressFormat),
                             symbolTables[entry.Context] ?? "N/A");
-                    }
+                    } 
                 }
             }
 
