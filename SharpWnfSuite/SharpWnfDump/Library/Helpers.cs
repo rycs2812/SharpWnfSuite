@@ -22,6 +22,104 @@ namespace SharpWnfDump.Library
         {
             int nMaxSize = -1;
             var outputBuilder = new StringBuilder();
+
+            if (pSecurityDescriptor != IntPtr.Zero)
+            {
+                if (NativeMethods.IsValidSecurityDescriptor(pSecurityDescriptor))
+                {
+                    var nSdSize = NativeMethods.GetSecurityDescriptorLength(pSecurityDescriptor);
+                    nMaxSize = Marshal.ReadInt32(pSecurityDescriptor, nSdSize);
+                }
+                else
+                {
+                    pSecurityDescriptor = IntPtr.Zero;
+                    nMaxSize = 0;
+                }
+            }
+
+            do
+            {
+                bool bReadable;
+                bool bWritable;
+                Char dataScopeTag;
+                WNF_DATA_SCOPE dataScope;
+                int exists = 2;
+                var additionalInfoBuilder = new StringBuilder();
+                var wnfStateName = new WNF_STATE_NAME { Data = stateName };
+
+                if (!wnfStateName.IsValid())
+                {
+                    outputBuilder.Append("[!] WNF State Name is invalid.\n");
+                    break;
+                }
+
+                dataScope = wnfStateName.GetDataScope();
+
+                if ((dataScope == WNF_DATA_SCOPE.Session) || (dataScope == WNF_DATA_SCOPE.PhysicalMachine))
+                    dataScopeTag = dataScope.ToString().ToLower()[0];
+                else
+                    dataScopeTag = dataScope.ToString()[0];
+
+                bReadable = ReadWnfData(
+                    stateName,
+                    out int changeStamp,
+                    out IntPtr pInfoBuffer,
+                    out uint nInfoLength);
+                bWritable = IsWritable(stateName);
+
+                if (bWritable)
+                    exists = GetWnfSubscribersPresenceInfo(stateName);
+
+                outputBuilder.AppendFormat(
+                    "| {0,-64}| {1} | {2} | {3} | {4} | {5} | {6,7} | {7,7} | {8,7} |\n",
+                    GetWnfName(stateName),
+                    dataScopeTag,
+                    wnfStateName.GetNameLifeTime().ToString()[0],
+                    (wnfStateName.GetPermanentData() != 0) ? 'Y' : 'N',
+                    bReadable && bWritable ? "RW" : (bReadable ? "RO" : (bWritable ? "WO" : "NA")),
+                    exists == 1 ? 'A' : (exists == 2 ? 'U' : 'I'),
+                    nInfoLength,
+                    nMaxSize == -1 ? "?" : nMaxSize.ToString("D"),
+                    changeStamp);
+
+                if (showSd && pSecurityDescriptor != IntPtr.Zero)
+                {
+                    NativeMethods.ConvertSecurityDescriptorToStringSecurityDescriptor(
+                        pSecurityDescriptor,
+                        Win32Consts.SDDL_REVISION_1,
+                        SECURITY_INFORMATION.DACL_SECURITY_INFORMATION | SECURITY_INFORMATION.SACL_SECURITY_INFORMATION | SECURITY_INFORMATION.LABEL_SECURITY_INFORMATION,
+                        out StringBuilder sdString,
+                        IntPtr.Zero);
+                    additionalInfoBuilder.AppendLine();
+                    additionalInfoBuilder.AppendFormat("        {0}\n", sdString);
+                }
+
+                if (showData && bReadable && (nInfoLength != 0))
+                {
+                    var hexDump = HexDump.Dump(pInfoBuffer, nInfoLength, 2);
+                    additionalInfoBuilder.AppendLine();
+                    additionalInfoBuilder.Append(string.IsNullOrEmpty(hexDump) ? "Failed to get hexdump.\n" : hexDump);
+                }
+
+                if (additionalInfoBuilder.Length > 0)
+                    outputBuilder.AppendFormat("{0}\n", additionalInfoBuilder.ToString());
+
+                if (pInfoBuffer != IntPtr.Zero)
+                    Marshal.FreeHGlobal(pInfoBuffer);
+            } while (false);
+
+            return outputBuilder.ToString();
+        }
+
+
+        public static string DumpWnfDataForSharpScan(
+            ulong stateName,
+            IntPtr pSecurityDescriptor,
+            bool showSd,
+            bool showData)
+        {
+            int nMaxSize = -1;
+            var outputBuilder = new StringBuilder();
             
             if (stateName == WNF_CMFC_FEATURE_CONFIGURATION_CHANGED) {
                 int debug_break = 1;

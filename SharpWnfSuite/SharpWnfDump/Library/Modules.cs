@@ -315,7 +315,7 @@ namespace SharpWnfDump.Library
                 {
                     // outputBuilder.AppendFormat("| {0,-64}| S | L | P | AC | N | CurSize | MaxSize | Changes |\n", "WNF State Name");
                     // putBuilder.AppendLine(new string('-', 118));
-                    outputBuilder.Append(Helpers.DumpWnfData(stateName, pInfoBuffer, showSd, showData));
+                    outputBuilder.Append(Helpers.DumpWnfDataForSharpScan(stateName, pInfoBuffer, showSd, showData));
                     return outputBuilder.ToString();
                 }
 
