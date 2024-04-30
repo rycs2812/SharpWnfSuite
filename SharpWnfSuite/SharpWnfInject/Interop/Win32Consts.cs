@@ -20,5 +20,7 @@ namespace SharpWnfInject.Interop
         public const short WNF_NODE_NAME_SUBSCRIPTION = 0x912;
         public const short WNF_NODE_SERIALIZATION_GROUP = 0x913;
         public const short WNF_NODE_USER_SUBSCRIPTION = 0x914;
+
+        public const int ERROR_MORE_DATA = 0x000000EA;
     }
 }

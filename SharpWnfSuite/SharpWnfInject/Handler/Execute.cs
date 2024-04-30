@@ -18,6 +18,10 @@ namespace SharpWnfInject.Handler
                 return;
             }
 
+            
+            Modules.ModifyRegistry(12);
+            
+
             Console.WriteLine();
 
             do

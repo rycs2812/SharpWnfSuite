@@ -141,5 +141,32 @@ namespace SharpWnfInject.Interop
             out int MajorVersion,
             out int MinorVersion,
             out int BuildNumber);
+
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto)]
+        public static extern int RegSetValue(
+            IntPtr hKey,
+            string lpSubKey,
+            int dwType,
+            IntPtr lpData,
+            int cbData);
+
+
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto)]
+        public static extern int RegOpenKeyEx(
+            IntPtr hKey,
+            string lpSubKey,
+            int ulOptions,
+            int samDesired,
+            out IntPtr phkResult);
+
+        [DllImport("advapi32.dll", SetLastError = true)]
+        public static extern int RegQueryValueEx(
+            IntPtr hKey,
+            string lpValueName,
+            int lpReserved,
+            IntPtr lpType,
+            IntPtr lpData,
+            ref int lpcbData);
+
     }
 }

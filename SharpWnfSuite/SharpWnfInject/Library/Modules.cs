@@ -314,5 +314,43 @@ namespace SharpWnfInject.Library
 
             return bSuccess;
         }
+
+        public static void ModifyRegistry(ulong stateName)
+        {
+            String testStateName = "00840B3AA3BC0875";
+            int error = NativeMethods.RegOpenKeyEx(
+                        Win32Consts.HKEY_LOCAL_MACHINE,
+                        "SYSTEM\\CurrentControlSet\\Control\\Notifications",
+                        0,
+                        Win32Consts.KEY_READ,
+                        out IntPtr phkResult);
+
+            if (error != Win32Consts.ERROR_SUCCESS)
+                return;
+
+            IntPtr pInfoBuffer;
+            error = Win32Consts.ERROR_MORE_DATA;
+
+            for (var trial = 0; (error == Win32Consts.ERROR_MORE_DATA); trial++)
+            {
+                int nInfoLength = 0x1000 * trial;
+                pInfoBuffer = Marshal.AllocHGlobal(nInfoLength);
+                error = NativeMethods.RegQueryValueEx(
+                    phkResult,
+                    testStateName,
+                    0,
+                    IntPtr.Zero,
+                    pInfoBuffer,
+                    ref nInfoLength);
+
+                if (error == Win32Consts.ERROR_SUCCESS)
+                {
+                    int debugb = -1;
+                }
+
+                Marshal.FreeHGlobal(pInfoBuffer);
+            }
+
+        }
     }
 }
