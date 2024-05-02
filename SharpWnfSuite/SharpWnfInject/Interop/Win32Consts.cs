@@ -22,6 +22,6 @@ namespace SharpWnfInject.Interop
         public const short WNF_NODE_USER_SUBSCRIPTION = 0x914;
 
         public const int ERROR_MORE_DATA = 0x000000EA;
-        public const int REG_SZ = 1;
+        public const int REG_BINARY = 3;
     }
 }

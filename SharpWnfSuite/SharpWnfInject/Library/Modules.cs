@@ -347,7 +347,14 @@ namespace SharpWnfInject.Library
 
                 if (error == Win32Consts.ERROR_SUCCESS)
                 {
-                    NativeMethods.RegSetValueEx(phkResult, targetStateName, 0, Win32Consts.REG_SZ, pInfoBuffer, nInfoLength);
+                    error = NativeMethods.RegOpenKeyEx(
+                                    Win32Consts.HKEY_LOCAL_MACHINE,
+                                    "SYSTEM\\CurrentControlSet\\Control\\Notifications",
+                                    0,
+                                    0x0002,
+                                    out phkResult);
+                    int status = NativeMethods.RegSetValueEx(phkResult, targetStateName, 0, Win32Consts.REG_BINARY, pInfoBuffer, nInfoLength);
+                    break;
                 }
 
                 Marshal.FreeHGlobal(pInfoBuffer);
