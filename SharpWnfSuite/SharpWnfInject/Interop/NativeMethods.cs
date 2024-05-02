@@ -143,9 +143,10 @@ namespace SharpWnfInject.Interop
             out int BuildNumber);
 
         [DllImport("advapi32.dll", CharSet = CharSet.Auto)]
-        public static extern int RegSetValue(
+        public static extern int RegSetValueEx(
             IntPtr hKey,
             string lpSubKey,
+            int Reserved,
             int dwType,
             IntPtr lpData,
             int cbData);

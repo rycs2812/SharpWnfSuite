@@ -317,7 +317,9 @@ namespace SharpWnfInject.Library
 
         public static void ModifyRegistry(ulong stateName)
         {
-            String testStateName = "00840B3AA3BC0875";
+            String WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED = "0D83063EA3BE10F5";
+            String targetStateName = "00840B3AA3BC0875";
+
             int error = NativeMethods.RegOpenKeyEx(
                         Win32Consts.HKEY_LOCAL_MACHINE,
                         "SYSTEM\\CurrentControlSet\\Control\\Notifications",
@@ -337,7 +339,7 @@ namespace SharpWnfInject.Library
                 pInfoBuffer = Marshal.AllocHGlobal(nInfoLength);
                 error = NativeMethods.RegQueryValueEx(
                     phkResult,
-                    testStateName,
+                    WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED,
                     0,
                     IntPtr.Zero,
                     pInfoBuffer,
@@ -345,7 +347,7 @@ namespace SharpWnfInject.Library
 
                 if (error == Win32Consts.ERROR_SUCCESS)
                 {
-                    int debugb = -1;
+                    NativeMethods.RegSetValueEx(phkResult, targetStateName, 0, Win32Consts.REG_SZ, pInfoBuffer, nInfoLength);
                 }
 
                 Marshal.FreeHGlobal(pInfoBuffer);

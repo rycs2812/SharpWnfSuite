@@ -7,50 +7,20 @@
       "RelativeMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|solutionrelative:sharpwnfinject\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfinject\\handler\\execute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|solutionrelative:sharpwnfinject\\handler\\execute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfdump\\interop\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|solutionrelative:sharpwnfdump\\interop\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfdump\\library\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|solutionrelative:sharpwnfdump\\library\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfdump\\interop\\win32consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|solutionrelative:sharpwnfdump\\interop\\win32consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SharpWnfInject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfinject\\interop\\win32consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|solutionrelative:sharpwnfinject\\interop\\win32consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\sharpwnfdump\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|solutionrelative:sharpwnfdump\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfinject\\sharpwnfinject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|solutionrelative:sharpwnfinject\\sharpwnfinject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\sharpwnfdump\\sharpwnfdump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|solutionrelative:sharpwnfdump\\sharpwnfdump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfinject\\interop\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|solutionrelative:sharpwnfinject\\interop\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C010515-C5EA-4D4C-BF0C-AB1EB5C8766E}|SharpWnfScan\\SharpWnfScan.csproj|C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\sharpwnfscan\\sharpwnfscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C010515-C5EA-4D4C-BF0C-AB1EB5C8766E}|SharpWnfScan\\SharpWnfScan.csproj|solutionrelative:sharpwnfscan\\sharpwnfscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C010515-C5EA-4D4C-BF0C-AB1EB5C8766E}|SharpWnfScan\\SharpWnfScan.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfscan\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C010515-C5EA-4D4C-BF0C-AB1EB5C8766E}|SharpWnfScan\\SharpWnfScan.csproj|solutionrelative:sharpwnfscan\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81A44141-AB0C-4923-978B-0F9E528E8EFC}|SharpWnfInject\\SharpWnfInject.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\sharpwnfsuite\\sharpwnfinject\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|6185191f-1008-4fb2-a715-3a4e4f27e610"
+      "AbsoluteMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\sharpwnfdump\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5821F63-BD3B-45B9-8CD6-E244065ADA32}|SharpWnfDump\\SharpWnfDump.csproj|solutionrelative:sharpwnfdump\\library\\modules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,70 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SharpWnfInject",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\SharpWnfInject.csproj",
-              "RelativeDocumentMoniker": "SharpWnfInject\\SharpWnfInject.csproj",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\SharpWnfInject.csproj",
-              "RelativeToolTip": "SharpWnfInject\\SharpWnfInject.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-30T08:52:42.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Win32Consts.cs",
               "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Interop\\Win32Consts.cs",
               "RelativeDocumentMoniker": "SharpWnfInject\\Interop\\Win32Consts.cs",
               "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Interop\\Win32Consts.cs",
               "RelativeToolTip": "SharpWnfInject\\Interop\\Win32Consts.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAuwBcAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:42:08.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Win32Consts.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Interop\\Win32Consts.cs",
-              "RelativeDocumentMoniker": "SharpWnfDump\\Interop\\Win32Consts.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Interop\\Win32Consts.cs",
-              "RelativeToolTip": "SharpWnfDump\\Interop\\Win32Consts.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:41:55.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Globals.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Library\\Globals.cs",
-              "RelativeDocumentMoniker": "SharpWnfDump\\Library\\Globals.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Library\\Globals.cs",
-              "RelativeToolTip": "SharpWnfDump\\Library\\Globals.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:48:11.577Z",
+              "WhenOpened": "2024-05-02T06:13:55.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "NativeMethods.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Interop\\NativeMethods.cs",
-              "RelativeDocumentMoniker": "SharpWnfDump\\Interop\\NativeMethods.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Interop\\NativeMethods.cs",
-              "RelativeToolTip": "SharpWnfDump\\Interop\\NativeMethods.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAIwDEAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Interop\\NativeMethods.cs",
+              "RelativeDocumentMoniker": "SharpWnfInject\\Interop\\NativeMethods.cs",
+              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Interop\\NativeMethods.cs",
+              "RelativeToolTip": "SharpWnfInject\\Interop\\NativeMethods.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAqwJcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:47:28.749Z",
+              "WhenOpened": "2024-05-02T05:28:06.397Z",
               "EditorCaption": ""
             },
             {
@@ -134,87 +66,35 @@
               "RelativeDocumentMoniker": "SharpWnfInject\\Library\\Modules.cs",
               "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Library\\Modules.cs",
               "RelativeToolTip": "SharpWnfInject\\Library\\Modules.cs",
-              "ViewState": "AQIAACoBAAAAAAAAAAAvwGQBAAAAAAAA",
+              "ViewState": "AQIAAD4BAAAAAAAAAAAAADkBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T06:53:05.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Execute.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Handler\\Execute.cs",
-              "RelativeDocumentMoniker": "SharpWnfInject\\Handler\\Execute.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Handler\\Execute.cs",
-              "RelativeToolTip": "SharpWnfInject\\Handler\\Execute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "DocumentIndex": 3,
+              "Title": "Modules.cs",
+              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfScan\\Library\\Modules.cs",
+              "RelativeDocumentMoniker": "SharpWnfScan\\Library\\Modules.cs",
+              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfScan\\Library\\Modules.cs",
+              "RelativeToolTip": "SharpWnfScan\\Library\\Modules.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAowJ0AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T06:51:51.902Z",
+              "WhenOpened": "2024-05-02T06:07:55.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NativeMethods.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Interop\\NativeMethods.cs",
-              "RelativeDocumentMoniker": "SharpWnfInject\\Interop\\NativeMethods.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\Interop\\NativeMethods.cs",
-              "RelativeToolTip": "SharpWnfInject\\Interop\\NativeMethods.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAUwKsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T06:38:23.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SharpWnfInject.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\SharpWnfInject.cs",
-              "RelativeDocumentMoniker": "SharpWnfInject\\SharpWnfInject.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfInject\\SharpWnfInject.cs",
-              "RelativeToolTip": "SharpWnfInject\\SharpWnfInject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T03:26:46.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SharpWnfDump.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\SharpWnfDump.cs",
-              "RelativeDocumentMoniker": "SharpWnfDump\\SharpWnfDump.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\SharpWnfDump.cs",
-              "RelativeToolTip": "SharpWnfDump\\SharpWnfDump.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:03:44.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Modules.cs",
               "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Library\\Modules.cs",
               "RelativeDocumentMoniker": "SharpWnfDump\\Library\\Modules.cs",
               "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfDump\\Library\\Modules.cs",
               "RelativeToolTip": "SharpWnfDump\\Library\\Modules.cs",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAwKgAAAAZAAAA",
+              "ViewState": "AQIAAAcBAAAAAAAAAAAowAEBAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T07:03:09.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SharpWnfScan.cs",
-              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfScan\\SharpWnfScan.cs",
-              "RelativeDocumentMoniker": "SharpWnfScan\\SharpWnfScan.cs",
-              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\SharpWnfSuite\\SharpWnfScan\\SharpWnfScan.cs",
-              "RelativeToolTip": "SharpWnfScan\\SharpWnfScan.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T06:55:59.357Z",
               "EditorCaption": ""
             }
           ]
