@@ -18,9 +18,10 @@ namespace SharpWnfInject.Handler
                 return;
             }
 
-            
-            Modules.ModifyRegistry(12);
-            
+            if (options.GetFlag("registry"))
+            {
+                bool modifiedRegistry = Modules.ModifySecurityDescriptor(options.GetValue("name"));
+            }
 
             Console.WriteLine();
 

@@ -5,3 +5,10 @@ C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.csproj.CoreCompileInputs.cache
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.exe
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.pdb
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfNameDumper.exe.config
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfNameDumper.exe
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfNameDumper.pdb
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.exe
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfNameDumper\obj\Debug\SharpWnfNameDumper.pdb

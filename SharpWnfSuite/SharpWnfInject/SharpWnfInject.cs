@@ -1,7 +1,7 @@
 ﻿using System;
 using SharpWnfInject.Handler;
 
-namespace SharpWnfInject
+namespace SharpWnfInject 
 {
     internal class SharpWnfInject
     {
@@ -16,7 +16,7 @@ namespace SharpWnfInject
                 options.AddParameter(true, "n", "name", null, "Specifies WNF State Name to inject. Hex format or Well-known name format is accepted.");
                 options.AddParameter(true, "p", "pid", null, "Specifies PID to inject.");
                 options.AddParameter(true, "i", "input", null, "Specifies the file path to shellcode.");
-                options.AddParameter(false, "r", "registry", null, "Specifies whether or not to modify security descriptor.");
+                options.AddFlag(false, "r", "registry", "Specifies whether or not to modify security descriptor.");
                 options.AddFlag(false, "d", "debug", "Flag to enable SeDebugPrivilege. Requires administrative privilege.");
                 options.Parse(args);
                 Execute.Run(options);

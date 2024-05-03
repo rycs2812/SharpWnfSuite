@@ -162,6 +162,7 @@ namespace SharpWnfScan.Library
                     foreach (var entry in nameSubscriptionEntries[subscription.Key])
                     {
                         outputBuilder.AppendFormat("        WNF_USER_SUBSCRIPTION @ 0x{0}\n",
+
                             entry.UserSubscription.ToString(addressFormat));
                         outputBuilder.AppendFormat("        Callback @ 0x{0} ({1})\n",
                             entry.Callback.ToString(addressFormat),

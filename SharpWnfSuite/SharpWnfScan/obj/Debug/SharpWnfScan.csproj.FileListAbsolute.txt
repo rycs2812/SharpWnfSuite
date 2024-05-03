@@ -6,3 +6,11 @@ C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\D
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.exe
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.pdb
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnf.820E8491.Up2Date
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfScan.exe.config
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfScan.exe
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfScan.pdb
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.csproj.CopyComplete
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.exe
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfScan\obj\Debug\SharpWnfScan.pdb

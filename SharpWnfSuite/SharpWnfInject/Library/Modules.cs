@@ -315,10 +315,13 @@ namespace SharpWnfInject.Library
             return bSuccess;
         }
 
-        public static void ModifyRegistry(ulong stateName)
+        /*
+         *  Copies the security descriptor of WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED and applies it to the target stateName
+         */
+        public static bool ModifySecurityDescriptor(String stateName)
         {
             String WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED = "0D83063EA3BE10F5";
-            String targetStateName = "00840B3AA3BC0875";
+            String hexStateName = Helpers.GetWnfStateName(stateName).ToString("x16").ToUpper();
 
             int error = NativeMethods.RegOpenKeyEx(
                         Win32Consts.HKEY_LOCAL_MACHINE,
@@ -328,7 +331,7 @@ namespace SharpWnfInject.Library
                         out IntPtr phkResult);
 
             if (error != Win32Consts.ERROR_SUCCESS)
-                return;
+                return false;
 
             IntPtr pInfoBuffer;
             error = Win32Consts.ERROR_MORE_DATA;
@@ -351,14 +354,19 @@ namespace SharpWnfInject.Library
                                     Win32Consts.HKEY_LOCAL_MACHINE,
                                     "SYSTEM\\CurrentControlSet\\Control\\Notifications",
                                     0,
-                                    0x0002,
+                                    Win32Consts.KEY_SET_VALUE,
                                     out phkResult);
-                    int status = NativeMethods.RegSetValueEx(phkResult, targetStateName, 0, Win32Consts.REG_BINARY, pInfoBuffer, nInfoLength);
-                    break;
+                    int status = NativeMethods.RegSetValueEx(phkResult, hexStateName, 0, Win32Consts.REG_BINARY, pInfoBuffer, nInfoLength);
+                    if (status == Win32Consts.ERROR_SUCCESS)
+                    {
+                        return true;
+                    }
                 }
 
                 Marshal.FreeHGlobal(pInfoBuffer);
             }
+
+            return false;
 
         }
     }

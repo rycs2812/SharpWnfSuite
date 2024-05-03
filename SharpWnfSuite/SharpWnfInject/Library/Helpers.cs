@@ -585,6 +585,30 @@ namespace SharpWnfInject.Library
             return wnfName;
         }
 
+        public static ulong GetWnfStateName(string name)
+        {
+            ulong value;
+
+            try
+            {
+                value = (ulong)Enum.Parse(typeof(WELL_KNOWN_WNF_NAME), name.ToUpper());
+            }
+            catch
+            {
+                try
+                {
+                    value = Convert.ToUInt64(name, 16);
+                }
+                catch
+                {
+                    value = 0;
+                }
+            }
+
+            return value;
+        }
+
+
         public static bool Is32BitProcess(IntPtr hProcess)
         {
             bool b32BitProcess = !Environment.Is64BitOperatingSystem || !Environment.Is64BitProcess;
