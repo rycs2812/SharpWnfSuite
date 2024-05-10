@@ -21,7 +21,9 @@ namespace SharpWnfInject.Interop
         public const short WNF_NODE_SERIALIZATION_GROUP = 0x913;
         public const short WNF_NODE_USER_SUBSCRIPTION = 0x914;
 
+        // Const for ModifySecurityDescriptor
         public const int ERROR_MORE_DATA = 0x000000EA;
-        public const int REG_SZ = 1;
+        public const int KEY_SET_VALUE = 0x0002;
+        public const int REG_BINARY = 3;
     }
 }

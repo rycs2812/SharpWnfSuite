@@ -128,6 +128,16 @@ namespace SharpWnfInject.Interop
             int MatchingChangeScope,
             int CheckStamp);
 
+
+        [DllImport("ntdll.dll")]
+        public static extern NTSTATUS NtQueryWnfStateData(
+            in ulong StateName,
+            IntPtr TypeId,
+            IntPtr ExplicitScope,
+            out int ChangeStamp,
+            IntPtr Buffer,
+            ref uint BufferSize);
+
         [DllImport("ntdll.dll")]
         public static extern NTSTATUS NtWriteVirtualMemory(
             IntPtr ProcessHandle,

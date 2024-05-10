@@ -5,3 +5,10 @@ C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.csproj.CoreCompileInputs.cache
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.exe
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.pdb
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfInject.exe.config
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfInject.exe
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\bin\Debug\SharpWnfInject.pdb
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.exe
+C:\Users\User\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfSuite\SharpWnfInject\obj\Debug\SharpWnfInject.pdb
