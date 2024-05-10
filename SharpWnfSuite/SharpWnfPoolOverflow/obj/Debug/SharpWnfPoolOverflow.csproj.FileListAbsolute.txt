@@ -1,0 +1,2 @@
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\obj\Debug\SharpWnfPoolOverflow.csproj.AssemblyReference.cache
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\obj\Debug\SharpWnfPoolOverflow.csproj.CoreCompileInputs.cache
