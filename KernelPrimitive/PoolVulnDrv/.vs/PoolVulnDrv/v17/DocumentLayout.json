@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\PoolVulnDrv\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E04E7BA8-3825-41F8-A19A-6A176A4C3846}|PoolVulnDrv\\PoolVulnDrv.vcxproj|C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\PoolVulnDrv\\PoolVulnDrv\\PoolVulnDrv.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04E7BA8-3825-41F8-A19A-6A176A4C3846}|PoolVulnDrv\\PoolVulnDrv.vcxproj|solutionrelative:PoolVulnDrv\\PoolVulnDrv.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PoolVulnDrv.cpp",
+              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\PoolVulnDrv\\PoolVulnDrv\\PoolVulnDrv.cpp",
+              "RelativeDocumentMoniker": "PoolVulnDrv\\PoolVulnDrv.cpp",
+              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\PoolVulnDrv\\PoolVulnDrv\\PoolVulnDrv.cpp",
+              "RelativeToolTip": "PoolVulnDrv\\PoolVulnDrv.cpp",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAACIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-08T05:19:28.562Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

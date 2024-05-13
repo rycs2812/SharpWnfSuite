@@ -25,7 +25,7 @@ namespace SharpWnfScan
                 options.AddExclusive(exclusive);
                 options.Parse(args);
 
-                Handler.Execute.Run(options);
+                Execute.Run(options);
             }
             catch (InvalidOperationException ex)
             {

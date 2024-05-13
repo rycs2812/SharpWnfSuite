@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\WnfPoolOverflow\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BD0A85-A06B-483A-8A46-C6FE10677D1E}|WnfPoolOverflow\\WnfPoolOverflow.csproj|c:\\users\\yong chang sheng\\desktop\\sharpwnfsuite\\kernelprimitive\\wnfpooloverflow\\wnfpooloverflow\\wnfpooloverflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0BD0A85-A06B-483A-8A46-C6FE10677D1E}|WnfPoolOverflow\\WnfPoolOverflow.csproj|solutionrelative:wnfpooloverflow\\wnfpooloverflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WnfPoolOverflow.cs",
+              "DocumentMoniker": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\WnfPoolOverflow\\WnfPoolOverflow\\WnfPoolOverflow.cs",
+              "RelativeDocumentMoniker": "WnfPoolOverflow\\WnfPoolOverflow.cs",
+              "ToolTip": "C:\\Users\\Yong Chang Sheng\\Desktop\\SharpWnfSuite\\KernelPrimitive\\WnfPoolOverflow\\WnfPoolOverflow\\WnfPoolOverflow.cs",
+              "RelativeToolTip": "WnfPoolOverflow\\WnfPoolOverflow.cs",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAuwBwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:52:19.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

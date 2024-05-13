@@ -350,6 +350,7 @@ namespace SharpWnfInject.Library
 
                 if (error == Win32Consts.ERROR_SUCCESS)
                 {
+<<<<<<< Updated upstream
                     error = NativeMethods.RegOpenKeyEx(
                                     Win32Consts.HKEY_LOCAL_MACHINE,
                                     "SYSTEM\\CurrentControlSet\\Control\\Notifications",
@@ -361,6 +362,10 @@ namespace SharpWnfInject.Library
                     {
                         return true;
                     }
+=======
+                    int asdsad = -1;
+                    //NativeMethods.RegSetValueEx(phkResult, targetStateName, 0, Win32Consts.REG_SZ, pInfoBuffer, nInfoLength);
+>>>>>>> Stashed changes
                 }
 
                 Marshal.FreeHGlobal(pInfoBuffer);
