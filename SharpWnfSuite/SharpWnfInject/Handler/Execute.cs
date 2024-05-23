@@ -20,7 +20,7 @@ namespace SharpWnfInject.Handler
 
             if (options.GetFlag("registry"))
             {
-                bool modifiedRegistry = Modules.ModifySecurityDescriptor(options.GetValue("name"));
+                //bool modifiedRegistry = Modules.ModifySecurityDescriptor(options.GetValue("name"));
             }
 
             Console.WriteLine();

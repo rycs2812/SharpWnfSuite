@@ -255,7 +255,7 @@ namespace SharpWnfDump.Library
 
 
 
-        public static String DumpKeyInfoForSharpScan(ulong stateName, bool showSd, bool showData)
+        public static String DumpKeyInfoForSharpScan(ulong stateName, bool showSd, bool showData, uint changeStamp)
         {
             int error;
             var wnfStateName = new WNF_STATE_NAME { Data = stateName };
@@ -315,7 +315,7 @@ namespace SharpWnfDump.Library
                 {
                     // outputBuilder.AppendFormat("| {0,-64}| S | L | P | AC | N | CurSize | MaxSize | Changes |\n", "WNF State Name");
                     // putBuilder.AppendLine(new string('-', 118));
-                    outputBuilder.Append(Helpers.DumpWnfDataForSharpScan(stateName, pInfoBuffer, showSd, showData));
+                    outputBuilder.Append(Helpers.DumpWnfDataForSharpScan(stateName, pInfoBuffer, showSd, showData, changeStamp));
                     return outputBuilder.ToString();
                 }
 

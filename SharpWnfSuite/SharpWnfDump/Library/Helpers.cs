@@ -116,19 +116,12 @@ namespace SharpWnfDump.Library
             ulong stateName,
             IntPtr pSecurityDescriptor,
             bool showSd,
-            bool showData)
+            bool showData,
+            uint changeStamp)
         {
             int nMaxSize = -1;
             var outputBuilder = new StringBuilder();
             
-            if (stateName == WNF_CMFC_FEATURE_CONFIGURATION_CHANGED) {
-                int debug_break = 1;
-            } else if (stateName == WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED)
-            {
-                int debug_break = 1;
-            }
-
-
             if (pSecurityDescriptor != IntPtr.Zero)
             {
                 if (NativeMethods.IsValidSecurityDescriptor(pSecurityDescriptor))
@@ -167,14 +160,9 @@ namespace SharpWnfDump.Library
                 else
                     dataScopeTag = dataScope.ToString()[0];
 
-                if (stateName == 973628810546643189)
-                {
-                    int debugbreak = -1;
-                }
-
                 bReadable = ReadWnfData(
                     stateName,
-                    out int changeStamp,
+                    out int tempChangeStamp,
                     out IntPtr pInfoBuffer,
                     out uint nInfoLength);
                 bWritable = IsWritable(stateName);
@@ -184,7 +172,6 @@ namespace SharpWnfDump.Library
                   
                 outputBuilder.AppendFormat(
                     "    | {0} | {1} | {2} | {3} | {4} | {5,7} | {6,7} | {7,7} |\n",
-                   //etWnfName(stateName),
                     dataScopeTag,
                     wnfStateName.GetNameLifeTime().ToString()[0],
                     (wnfStateName.GetPermanentData() != 0) ? 'Y' : 'N',

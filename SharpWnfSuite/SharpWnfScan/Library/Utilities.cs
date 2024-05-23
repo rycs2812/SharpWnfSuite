@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 using SharpWnfScan.Interop;
@@ -192,6 +194,29 @@ namespace SharpWnfScan.Library
 
             Marshal.FreeHGlobal(pInfoBuffer);
 
+            results = results.OrderBy(pNs =>
+            {
+                if (pNs.Key == 0x0000000008259B00 ) //  0x41C64E6DA3B7A045
+                {
+                    int debug = 1;
+                }
+                pInfoBuffer = Marshal.AllocHGlobal((int)Marshal.SizeOf(typeof(WNF_NAME_SUBSCRIPTION64_WIN11)));
+                NTSTATUS ntstatus = NativeMethods.NtReadVirtualMemory(
+                    hProcess,
+                    pNs.Value,
+                    pInfoBuffer,
+                    (uint) Marshal.SizeOf(typeof(WNF_NAME_SUBSCRIPTION64_WIN11)),
+                    out uint nReturnedSize);
+                var nameSubscription = (WNF_NAME_SUBSCRIPTION64_WIN11)Marshal.PtrToStructure(pInfoBuffer, typeof(WNF_NAME_SUBSCRIPTION64_WIN11));
+                var wnfStateName = new WNF_STATE_NAME { Data = nameSubscription.StateName };
+                if (wnfStateName.GetNameLifeTime() == WNF_STATE_NAME_LIFETIME.Temporary)
+                {
+                    return 1;
+                }
+                Marshal.FreeHGlobal(pInfoBuffer);
+                return -1 * nameSubscription.CurrentChangeStamp;
+            }
+            ).ToDictionary(x => x.Key, x => x.Value);
             return results;
         }
 
@@ -557,7 +582,7 @@ namespace SharpWnfScan.Library
                     var nameSubscription64 = (WNF_NAME_SUBSCRIPTION64_WIN11)Marshal.PtrToStructure(
                         pInfoBuffer,
                         typeof(WNF_NAME_SUBSCRIPTION64_WIN11));
-
+                    
                     if (!nameSubscriptions.ContainsKey(nameSubscription64.StateName))
                         nameSubscriptions.Add(nameSubscription64.StateName, pNameSubscription);
 

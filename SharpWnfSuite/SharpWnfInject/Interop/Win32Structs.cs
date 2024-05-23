@@ -546,18 +546,18 @@ namespace SharpWnfInject.Interop
     [StructLayout(LayoutKind.Sequential)]
     internal struct WNF_SUBSCRIPTION_TABLE64_WIN11
     {
-        public WNF_CONTEXT_HEADER Header;
-        public long /* SRWLOCK */ NamesTableLock;
-        public RTL_RB_TREE64 NamesTableEntry;
-        public LIST_ENTRY64 SerializationGroupListHead;
-        public long /* SRWLOCK */ SerializationGroupLock;
+        public WNF_CONTEXT_HEADER Header; // 0x4
+        public long /* SRWLOCK */ NamesTableLock; // 0x8
+        public RTL_RB_TREE64 NamesTableEntry; // 0x10   
+        public LIST_ENTRY64 SerializationGroupListHead; // 0x10 (+0x20)
+        public long /* SRWLOCK */ SerializationGroupLock; // 0x8 (+0x30)
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)] 
+        public int[] Unknown1; // 0x8   
+        public int SubscribedEventSet; // 0x4
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
-        public int[] Unknown1;
-        public int SubscribedEventSet;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
-        public int[] Unknown2;
-        public long Timer;
-        public ulong TimerDueTime;
+        public int[] Unknown2; // 0x8
+        public long Timer; // 0x8 (+0x50)
+        public ulong TimerDueTime; // 0x8
     }
 
     [StructLayout(LayoutKind.Sequential)]

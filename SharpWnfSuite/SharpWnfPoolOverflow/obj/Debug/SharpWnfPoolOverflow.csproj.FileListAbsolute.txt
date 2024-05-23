@@ -1,2 +1,7 @@
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\obj\Debug\SharpWnfPoolOverflow.csproj.AssemblyReference.cache
 C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\obj\Debug\SharpWnfPoolOverflow.csproj.CoreCompileInputs.cache
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\bin\Debug\SharpWnfPoolOverflow.exe.config
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\bin\Debug\SharpWnfPoolOverflow.exe
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\bin\Debug\SharpWnfPoolOverflow.pdb
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\obj\Debug\SharpWnfPoolOverflow.exe
+C:\Users\Yong Chang Sheng\Desktop\SharpWnfSuite\SharpWnfSuite\SharpWnfPoolOverflow\obj\Debug\SharpWnfPoolOverflow.pdb

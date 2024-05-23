@@ -1,2 +1,10 @@
-**/Debug/
-**/.vs/
+subscriptionTable64 (00000000`010f96b0)
+
+- Unknown1: 0x000000e8c84fe0f0
+- Unknown2: 0x000000e8c84fe0f8
+- Timer: 17805872 - 0x10fb230 
+- TimerDueTime: 0
+- SubscribedEventSet: 1000
+
+- TimerCallback: poi(poi(010f96b0 + 50) + 8)
+

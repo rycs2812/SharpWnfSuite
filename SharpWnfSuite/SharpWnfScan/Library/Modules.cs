@@ -6,6 +6,8 @@ using System.Text;
 using SharpWnfScan.Interop;
 using SharpWnfDump.Library;
 using System.Security.Cryptography.X509Certificates;
+using System.Linq;
+using System.Net;
 
 namespace SharpWnfScan.Library
 {
@@ -146,7 +148,7 @@ namespace SharpWnfScan.Library
                 symbolTables = new Dictionary<IntPtr, string>();
             }
 
-            NativeMethods.NtClose(hProcess);
+            //NativeMethods.NtClose(hProcess);
 
             foreach (var subscription in nameSubscriptions)
             {
@@ -155,7 +157,17 @@ namespace SharpWnfScan.Library
                     subscription.Key.ToString("X16"),
                     Helpers.GetWnfName(subscription.Key));
 
-                outputBuilder.Append(SharpWnfDump.Library.Modules.DumpKeyInfoForSharpScan(subscription.Key, false, false) + "\n\n");
+                IntPtr pInfoBuffer = Marshal.AllocHGlobal((int)Marshal.SizeOf(typeof(WNF_NAME_SUBSCRIPTION64_WIN11)));
+                ntstatus = NativeMethods.NtReadVirtualMemory(
+                    hProcess,
+                    subscription.Value,
+                    pInfoBuffer,
+                    (uint)Marshal.SizeOf(typeof(WNF_NAME_SUBSCRIPTION64_WIN11)),
+                    out uint nReturnedSize);
+
+                var nameSubscription = (WNF_NAME_SUBSCRIPTION64_WIN11)Marshal.PtrToStructure(pInfoBuffer, typeof(WNF_NAME_SUBSCRIPTION64_WIN11));
+
+                outputBuilder.Append(SharpWnfDump.Library.Modules.DumpKeyInfoForSharpScan(subscription.Key, false, false, nameSubscription.CurrentChangeStamp) + "\n\n");
 
                 if (bVerbose)
                 {

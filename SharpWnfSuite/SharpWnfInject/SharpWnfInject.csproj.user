@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-<<<<<<< Updated upstream
-    <StartArguments>-p 6308 -n WNF_CMFC_FEATURE_CONFIGURATION_CHANGED -i notepad_x64.bin -r</StartArguments>
-=======
-    <StartArguments>-p 9648 -n WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED -i notepad_x64.bin</StartArguments>
->>>>>>> Stashed changes
+    <StartArguments>-p 28052 -n WNF_SHEL_WINDOWSTIP_CONTENT_PUBLISHED -i notepad_x64.bin</StartArguments>
   </PropertyGroup>
 </Project>
